@@ -20,8 +20,6 @@ client.on("ready", () => {
 });
 
 client.login(token);
-//client.login("OTI3NjQxMDI2MTgzNzA4NzEy.YdNLBw.KkXnmt4Z2PK4F9r9EpuWQ7ojntA");
-
 
 //put new stuff here
 
@@ -82,6 +80,8 @@ client.on("message", msg => {
         
         msg.member.voice.channel.join()
         .then(connection => {
+          client.user.setStatus('dnd');
+          client.user.setActivity('Never Gonna Give You Up', { type: 'PLAYING' });
             let dispatcher = connection.play(stream, {
                 type: "opus"
             })
