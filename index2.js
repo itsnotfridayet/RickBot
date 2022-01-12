@@ -1,3 +1,6 @@
+
+// *IGNORE THIS FILE*
+
 const Discord = require('discord.js');
 const { Client, Intents } = require('discord.js');
 const ytdl = require('ytdl-core');

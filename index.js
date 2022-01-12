@@ -15,24 +15,15 @@ app.get('/', (req, res) => res.send('Hello World!'));
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
 
-client.on("ready", () => {
-    console.log("ready")
+client.on('ready', () => {
+	console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('interactionCreate', async interaction => {
-  console.log("interaction")
+client.on('interactionCreate', async (interaction) => {
 	if (!interaction.isCommand()) return;
-  console.log("test1")
 
-	const { commandName } = interaction;
-
-	if (commandName === 'ping') {
-    console.log("test")
+	if (interaction.commandName === 'ping') {
 		await interaction.reply('Pong!');
-	} else if (commandName === 'server') {
-		await interaction.reply('Server info.');
-	} else if (commandName === 'user') {
-		await interaction.reply('User info.');
 	}
 });
 

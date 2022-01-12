@@ -4,8 +4,16 @@
       {
         "id": "875fc18f-3f79-4ef2-a205-e27fa7497a88",
         "line": 1,
-        "version": 4714,
+        "version": 4772,
         "index": 6
+      }
+    ],
+    "nvm.sh": [
+      {
+        "id": "9cbb05cd-1e19-4c16-b181-146c6f8b224c",
+        "line": 2,
+        "version": 3,
+        "index": 115
       }
     ]
   }
